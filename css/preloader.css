@@ -11,7 +11,7 @@
 }
 #preloader .inner{
     position: absolute;
-    top: 50%; /* Centralizar a parte interna do preload (onde fica a animação) */
+    top: 40%; /* Centralizar a parte interna do preload (onde fica a animação) */
     left: 50%;
     transform: translate(50%, 50%);
 }
