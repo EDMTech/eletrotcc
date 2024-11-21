@@ -160,6 +160,17 @@ body{
 .primeira .max-width .artigo iframe{
     border-radius: 10px;
 }
+.primeira .max-width .artigo .iframe a{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    gap: 10px;
+    color: rgb(166, 81, 245);
+}
+.primeira .max-width .artigo .iframe img{
+    width: 50px;
+}
 
 /*  Sessão footer  */
 footer{
