@@ -156,6 +156,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    gap: 20px;
 }
 .primeira .max-width .artigo iframe{
     border-radius: 10px;
