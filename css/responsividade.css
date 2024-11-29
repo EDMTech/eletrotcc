@@ -1,0 +1,164 @@
+@media(max-width: 1200px){
+    .quarta .max-width .quarta-content{
+        font-size: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto auto;
+        gap: 50px;
+    }
+}
+@media(max-width: 980px){
+    .navbar .max-width{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: space-between;
+    }
+    .menu-btn{
+        display: block;
+        z-index: 5;
+    }
+    .menu-btn i.active:before{
+        content: "\f00d";
+    }
+    .navbar .menu{
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        left: 0%;
+        top: 0;
+        background: rgba(89, 5, 163, 0.829);
+        box-shadow: 0px 0px 10px rgba(89, 5, 163, 0.829);
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.5s ease;
+        opacity: 0;
+        pointer-events: none; /* Desativa cliques */
+        transition: opacity 0.5s ease;
+    }
+    .navbar .menu.active{
+        left: 0%;
+        opacity: 1;
+        pointer-events: auto; /* Habilita cliques quando ativo */
+        transition: all 1.0s ease;
+    }
+    /* Esconder o NavBar */
+    .navbar .menu li .menu-btn{
+        display: block;
+    }
+    .navbar .menu li a {
+        list-style: none;
+        display: inline-block;
+        text-align: center;
+        align-items: center;
+        color: transparent; /* Torna o texto invisível */
+        font-size: 0; /* Oculta o texto sem quebrar o layout */
+    }
+    .navbar .menu li a ion-icon {
+        display: block;
+        margin: 0 auto; /* Centraliza os ícones */
+        font-size: 24px; /* Ajusta o tamanho dos ícones */
+        color: #fff; /* Define a cor dos ícones */
+    }
+
+    /* Sessão Ínicio */
+    .primeira{
+        overflow-x: hidden;
+        width: 100%;
+    }
+    .primeira .max-width{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+    }
+    .primeira .max-width .title{
+        padding: 0 15px;
+    }
+    .primeira .max-width .title h1{
+        font-size: 50px;
+        color: whitesmoke;
+        font-family: "Protest Guerrilla", sans-serif;
+        text-transform: uppercase;
+    }
+    .primeira .max-width .title h4{
+        font-size: 20px;
+    }
+
+    /* Segunda Part - Sobre Mim */
+    .segunda .max-width{
+        padding: 50px 12px;
+        margin: auto;
+        width: 100%;
+    }
+    .segunda .max-width .segunda-content a{
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        text-align: right;
+        gap: 5px;
+        font-size: 22px;
+        margin-top: 15px;
+        color: rgb(166, 81, 245);
+    }
+}
+@media(max-width: 500px){
+    .primeira .max-width .title{
+        position: absolute; /* Torna o título posicionado relativamente ao seu container */
+        top: 50%; /* Posiciona verticalmente no meio */
+        left: 50%; /* Posiciona horizontalmente no meio */
+        transform: translate(-50%, -50%); /* Move o título para o centro exato */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        z-index: 5; /* Garante que o título fique acima do slideshow */
+        pointer-events: none; /* Garante que o título não interfira com as interações do slideshow */
+    }
+
+    /* Linha central separando os conteúdos*/
+    .terceira .max-width .timeline-items::before{
+        content: "";
+        position: absolute;
+        width: 5px;
+        height: 100%;
+        background-color: rgb(245, 240, 240);
+        left: calc(100% - 1px);
+    }
+    .terceira .max-width .timeline-item:nth-child(odd){
+        padding-right: calc(0% + 0px);
+        padding-right: 20px;
+        text-align: right;
+    }
+    .terceira .max-width .timeline-item:nth-child(even){
+        padding-left: calc(0% + 0px);
+        padding-right: 20px;
+        text-align: right;
+    }
+    .terceira .max-width .timeline-dot{
+        position: absolute;
+        left: calc(100% - 8px);
+        top: 10px;
+        height: 21px;
+        width: 21px;
+        background-color: whitesmoke;
+        box-shadow: 0 0 25px rgb(245, 240, 240),
+                    0 0 50px rgb(245, 240, 240);
+        border-radius: 50%;
+    }
+    .terceira .max-width .timeline-content:hover{
+        transform: none;
+        box-shadow: 0 0 5px whitesmoke;
+    }
+    .quarta .max-width .quarta-content{
+        font-size: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+    }
+}

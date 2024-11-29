@@ -1,0 +1,15 @@
+/* Barra Scroll */
+::-webkit-scrollbar {
+    width: 7px;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar-thumb {
+    background: rgb(166, 81, 245);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #222;
+}

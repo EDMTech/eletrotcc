@@ -1,0 +1,87 @@
+/* Link da Fonte */
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&family=Protest+Guerrilla&display=swap');
+
+/* Navbar Ínicio */
+.navbar{
+    position: fixed;
+    width: 100%;
+    transition: all 0.3s ease;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    font-family: "Arial", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    z-index: 5;
+}
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    padding: 15px;
+}
+/* Desativar os eventos de ponteiro no menu quando a navbar está sticky */
+.navbar .menu.sticky {
+    pointer-events: none; /* Desativa a interação com o menu */
+}
+.navbar.sticky{
+    opacity: 0.9;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(20px);
+    z-index: 5;
+}
+.navbar .max-width .left h3{
+    font-size: 15px;
+    font-family: "Protest Guerrilla", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    transition: 0.3s ease;
+    z-index: 0;
+    text-align: right;
+}
+.navbar .max-width .left h3 span{
+    font-size: 20px;
+    font-family: "Protest Guerrilla", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    transition: 0.3s ease;
+    z-index: 0;
+    text-align: right;
+}
+.navbar .max-width .left h3:hover{
+    transform: scale(1.1);
+}
+.navbar .max-width .left h3:hover span{
+    opacity: 0.3;
+    backdrop-filter: blur(10px);
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+}
+.navbar .menu li a{
+    display: block;
+    color: whitesmoke;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-left: 30px;
+    transition: color 0.3s ease;
+}
+.navbar .menu li a ion-icon{
+    display: none;
+}
+.navbar .menu li a:hover{
+    filter: brightness(40%);
+    transition: all 0.2s ease;
+}
+.navbar.sticky .menu li a:hover{
+    filter: brightness(40%);
+    transition: all 0.2s ease;
+}
+/* Esconder os Ícones do NavBar */
+.navbar .menu li .fa-solid{
+    display: none;
+}
+

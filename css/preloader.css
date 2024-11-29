@@ -1,0 +1,25 @@
+#preloader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #0a0909; /* Cor do background que ocupara o Body */
+    z-index: 9999; /* z-index para jogar para frente e sobrepor tudo */
+    width: 100%;
+    height: 100%;
+}
+#preloader .inner{
+    position: absolute;
+    top: 40%; /* Centralizar a parte interna do preload (onde fica a animação) */
+    left: 50%;
+    transform: translate(50%, 50%);
+}
+@media (max-width: 500px){
+    #preloader .inner{
+        position: absolute;
+        top: 40%; /* Centralizar a parte interna do preload (onde fica a animação) */
+        left: 35%;
+        transform: translate(50%, 50%);
+    }
+}
